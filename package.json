@@ -1,0 +1,18 @@
+{
+  "name": "videochatapi",
+  "version": "1.0.0",
+  "description": "This is an api to help make video chat applications",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "api",
+    "video-chat"
+  ],
+  "author": "Stephen Rogers",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
