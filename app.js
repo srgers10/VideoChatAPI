@@ -1,12 +1,14 @@
 const express = require('express');
 const app = express();
 
-const port = 3000;
+const port = process.env.PORT;
 
 const vrVideoStream = [];
 const webVideoStream = [];
 
-app.listen(port, '0.0.0.0', () => console.log('listining at ' + port));
+var listener = app.listen(process.env.PORT, function () {
+  console.log('Your app is listening on port ' + listener.address().port);
+});
 app.use(express.json({limit : '1mb'}));
 
 
@@ -32,5 +34,7 @@ app.post('/postVR', (req, res) => {
     //console.log(data);
     res.end;
 })
+
+
 
 
